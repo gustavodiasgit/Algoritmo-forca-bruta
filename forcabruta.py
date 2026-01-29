@@ -1,9 +1,9 @@
 numeros = []
-qtd = int(input("Quantos números você deseja inserir na sua lista? "))
+qtd = int(input("Quantos valores você deseja inserir na sua lista? "))
 for i in range(qtd):
-    numero = int(input("Insira o número {}: ".format(i + 1)))
+    numero = input("Insira o valor {}: ".format(i + 1))
     numeros.append(numero)
-alvo = int(input("Insira o número que você deseja encontrar: "))
+alvo = input("Insira o valor que você deseja encontrar: ")
 encontrado = False
 
 print("Comparando valores...")
@@ -14,7 +14,7 @@ for numero in numeros:
         break
 
 if encontrado:
-    print("Número encontrado!")
+    print("Valor encontrado!")
 else:
-    print("Número não encontrado.")
+    print("Valor não encontrado.")
 print("Busca concluída.")
